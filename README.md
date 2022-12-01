@@ -1,6 +1,8 @@
 # GPTsy
 ## An app to find the perfect gift at Etsy using GPT-3
 
+![GPTsy is awesome!](/app/assets/images/gptsy.png)
+
  ### Instructions to run
 
  1. Install requirements.txt to your virtualenv of choice
