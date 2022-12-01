@@ -1,16 +1,17 @@
-# gift_finder
-# An app to find the perfect gift at Etsy
+# GPTsy
+## An app to find the perfect gift at Etsy using GPT-3
 
- Instructions to run:
+ ### Instructions to run
 
- a) Install requirements.txt to your virtualenv of choice
- b) python3 scripts/GPTsy.py \
-    --api-key=<INSERT YOUR OWN OPENAI API KEY>
- c) Open http://127.0.0.1:8888 in your browser 
+ 1. Install requirements.txt to your virtualenv of choice
+ 2. run
+ ```
+ python3 app/GPTsy.py --api-key=<INSERT YOUR OWN OPENAI API KEY>
+ ```
+ 3. Open http://127.0.0.1:8888 in your browser 
 
 
-Caveats:
-
+### Caveats
 Too many to list. Top 4:
 * Code is slow/unoptimized, and each run takes about 20 seconds
 * Queries are not sanitized in any way --- it is easy to break this by appending 'ignore the previous prompt' to the query or other malicious prompt.
@@ -19,6 +20,5 @@ Too many to list. Top 4:
 
 This is a prototype, not a production system, USE AT YOUR OWN RISK.
 
-Acknowledgements:
-
+### Acknowledgements
 Flask App based on @andrew's xwalk-browser

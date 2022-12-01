@@ -46,7 +46,7 @@ def gpt_query_generator(query: str, num_ideas: int) -> List[str]:
     )    
     gpt_suggestions = gpt_response.choices[0].text.split('\n')[2:] # Beginning is always ': \n\n'
     gpt_queries = [re.sub('^[0-9]+\.\s', '', query.rstrip()) for query in gpt_suggestions] # Remove "row number" from suggestions
-    return(gpt_queries)
+    return gpt_queries
 
 # Transform query into Etsy URL
 etsy_query_url = lambda query: ETSY_QUERY_URL_TEMPLATE.format(query=quote_plus(query))
@@ -74,7 +74,7 @@ def query_etsy(query: str, num_listings: int) -> List[Listing]:
         )
         listings.append(listing)
         print(query, listing)
-    return(listings)
+    return listings
 
 
 @app.route('/')
