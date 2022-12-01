@@ -1,0 +1,19 @@
+{% for gpt_query, query_url, listings in listings_per_query: %}
+  <div class="row" style='background-color:lightblue; width:100%'>
+    <br><div class="column">
+      <a href="{{query_url}}">{{ gpt_query }}</a>
+    </div>
+  </div>
+  <div class="row">
+    {% for listing in listings %}
+      <div class="column">
+        <a href="http://www.etsy.com/listing/{{ listing.id }}" target="_blank">
+          <div class="container">
+              <img src="{{ listing.src }}" style="width: 100%" alt="{{ listing.title }}" class="image"/>
+              <div class="bottom-overlay">{{ listing.title }}</div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}

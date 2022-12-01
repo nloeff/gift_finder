@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>{{ title }}</title>
+  </head>
+  {% include 'css.html' %}
+  <body>
+    <div class="header">
+      <p style="text-align:center;font-size:300%;font-family:Georgia,'Times New Roman',Times,serif;color:orange;">GPTsy</p>
+      <form action="/" id="query_set">
+        <label for="query">Find the perfect gift at Etsy for </label>
+        <input type="text" id="query" name="query" size="50" value="{{ query }}">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+    {% include 'grid.html' %}
+</body>
+</html>

@@ -1,0 +1,7 @@
+requests
+argparse
+openai
+re
+urllib
+bs4
+flask
