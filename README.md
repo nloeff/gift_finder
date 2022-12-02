@@ -1,11 +1,11 @@
 # GPTsy
 ## An app to find the perfect gift at Etsy using GPT-3
 
-![GPTsy is awesome!](/app/assets/images/gptsy.png)
+![GPTsy is awesome!](/app/assets/images/gptsy_demo.png)
 
  ### Instructions to run
 
- 1. Install requirements.txt to your virtualenv of choice
+ 1. Install `requirements.txt` to your virtualenv of choice
  2. run
  ```
  python3 app/GPTsy.py --api-key=<INSERT YOUR OWN OPENAI API KEY>
@@ -14,7 +14,8 @@
 
 
 ### Caveats
-Too many to list. Top 4:
+Too many to list. Top 5:
+* Code is scraping Etsy, not using Etsy APis
 * Code is slow/unoptimized, and each run takes about 20 seconds
 * Queries are not sanitized in any way --- it is easy to break this by appending 'ignore the previous prompt' to the query or other malicious prompt.
 * GPT-3 results are not guaranteed to have the right format, or be coherent, or not be offensive or biased.
